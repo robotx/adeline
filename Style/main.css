@@ -1,0 +1,353 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x:hidden;
+    background: white;  /* fond de secours */
+    background: rgba(255,255,255,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 54%, rgba(209,209,209,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(51%, rgba(255,255,255,1)), color-stop(54%, rgba(255,255,255,1)), color-stop(100%, rgba(209,209,209,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 54%, rgba(209,209,209,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 54%, rgba(209,209,209,1) 100%);
+}
+
+.panel {
+    position:sticky;
+    float:right;
+    height:100%;
+    width:10%;
+    background-color: #0fa9ff;
+}
+
+.hidden {
+    display:none;
+}
+
+.open {
+    display:block;
+}
+
+.header {
+    height:10%;
+}
+
+    #about {
+        float:left;
+    }
+
+    .icon {
+        font-size:25px;
+        float:right;
+        margin-right:50px;
+        margin-top:25px;
+    }
+
+    .icon-title {
+        font-size:15px;
+        float:right;
+        margin-right:-60px;
+        margin-top:65px;
+        color: #b52965;
+        font-weight:700;
+    }
+
+    .title-header {
+        position:relative;
+        margin:auto;
+        background-color:#E8E8E8;
+        width:20%;
+        height:80px;
+    }
+
+    @keyframes blink {
+        0%   {opacity:0;}
+        50%   {opacity:0;}
+        50.01%   {opacity:1;}
+        100% {opacity:1;}
+    }
+
+    .blink {
+        -webkit-animation: blink 1.25s linear infinite;
+        -moz-animation: blink 1.25s linear infinite;
+        -o-animation: blink 1.25s linear infinite;
+        animation: blink 1.25s linear infinite;
+    }
+
+    #title {
+        position: relative;
+        top:25%;
+        text-align:center;
+        font-weight:700;
+        color:#2E2E2E;
+    }
+
+.code {
+    float:right;
+    position: absolute;
+    margin-left:35%;
+    margin-top:5%;
+    width:900px;
+    height:700px;
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0 39.8%);
+    opacity:.99;
+}
+
+    .perso {
+        position: absolute;
+        margin-top:7%;
+        right:0;
+        margin-right:3%;
+        height:380px;
+        width:400px;
+        background-color: rgba(255,255,255,.45);
+        -webkit-border-radius:15px;
+        -moz-border-radius:15px;
+        border-radius:15px;
+        z-index:3;
+        -webkit-box-shadow: 7px 6px 13px -2px rgba(0,0,0,0.2);
+        -moz-box-shadow: 7px 6px 13px -2px rgba(0,0,0,0.2);
+        box-shadow: 7px 6px 13px -2px rgba(0,0,0,0.2);
+    }
+
+    #collapse {
+        position: absolute;
+        width:120px;
+        height:inherit;
+        margin:auto;
+        right:30px;
+    }
+
+        .infopersotitle {
+            top:5px;
+            text-align: center;
+            font-weight:700;
+            font-size:1.5em;
+            color: #b52965;
+        }
+
+        .infoperso {
+            margin-top:20px;
+            margin-left:20px;
+            text-align: left;
+            font-weight:700;
+            color:#b52965;
+        }
+
+.yellow-subject {
+    position: relative;
+    margin-top: 5%;
+    padding-bottom: 2%;
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+    background-color: #FFB900;
+    opacity: .99;
+    z-index: 1;
+    clip-path: polygon(0 0, 76% 0, 57.5% 100%, 0% 100%);
+}
+
+    .whois {
+        position: relative;
+        margin-left:50px;
+        font-size:2em;
+        font-weight: 700;
+        color: #464646;
+    }
+
+    .presentation {
+        position: relative;
+        left:75px;
+        font-size:1em;
+        font-weight: 700;
+        color:#2E2E2E;
+    }
+
+.button {
+    height:50px;
+    width:980px;
+    margin-top:50px;
+    margin-left:50px;
+    background-color: #43a2ff;
+    border-radius:5px;
+    -webkit-box-shadow: 7px 6px 13px -2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 7px 6px 13px -2px rgba(0,0,0,0.2);
+    box-shadow: 7px 6px 13px -2px rgba(0,0,0,0.2);
+}
+
+    .buttontitle {
+        font-size:1em;
+        font-weight:300;
+        color:white;
+        top:15px;
+        right:10px;
+    }
+
+    #skills {
+        border-left: 65px solid #3d88cb;
+    }
+
+        .skills1 {
+            margin-left:50px;
+            font-size:1.2em;
+            font-weight: 700;
+            color:#2E2E2E;
+        }
+
+        .fullskill {
+            position:absolute;
+            margin-left:220px;
+            margin-top:-35px;
+            height:15px;
+            width:850px;
+            border-radius:5px;
+            background-color: rgba(200,200,200,.50);
+        }
+
+        #web {
+            width:500px;
+            background-color: #B91C7D;
+        }
+
+             #cssfullskill {
+                  margin-left: 300px;
+                  width:770px;
+              }
+
+             #css {
+                 margin-left: 300px;
+                 width:650px;
+                 background-color:#B91C7D;
+             }
+
+             #phpfullskill {
+                 margin-left: 300px;
+                 width:770px;
+             }
+
+             #php {
+                 margin-left: 300px;
+                 width:350px;
+                 background-color:#B91C7D;
+             }
+
+             #jsfullskill {
+                 margin-left: 300px;
+                 width:770px;
+             }
+
+             #js {
+                 margin-left: 300px;
+                 width:70px;
+                 background-color:#B91C7D;
+             }
+
+        #informatique {
+            background-color: #0fa9ff;
+            width:750px;
+        }
+
+
+            #generalfullskill {
+                 margin-left: 300px;
+                 width:770px;
+            }
+
+            #generalinfo {
+                  margin-left: 300px;
+                  width:700px;
+                  background-color:#0fa9ff;
+            }
+
+            #networkfullskill {
+                 margin-left: 300px;
+                 width:770px;
+            }
+
+            #networkinfo {
+                  margin-left: 300px;
+                  width:400px;
+                  background-color:#0fa9ff;
+            }
+
+            #linuxfullskill {
+                 margin-left: 300px;
+                 width:770px;
+            }
+
+            #linuxinfo {
+                  margin-left: 300px;
+                  width:550px;
+                  background-color:#0fa9ff;
+            }
+
+        #langues {
+             background-color: #18ad0a;
+             width:750px;
+        }
+
+            #frfullskill {
+                 margin-left: 300px;
+                 width:770px;
+            }
+
+             #frinfo {
+                margin-left: 300px;
+                width:770px;
+                background-color:#18ad0a;
+             }
+
+             #enfullskill {
+                 margin-left: 300px;
+                 width:770px;
+             }
+
+             #eninfo {
+                margin-left: 300px;
+                width:600px;
+                background-color:#18ad0a;
+             }
+
+             #defullskill {
+                 margin-left: 300px;
+                 width:770px;
+             }
+
+             #deinfo {
+                margin-left: 300px;
+                width:150px;
+                background-color:#18ad0a;
+             }
+
+    #certifications {
+        border-left: 65px solid #463d99;
+        background-color: #574cbf;
+
+    }
+
+    #experiences {
+        border-left: 65px solid #8e071f;
+        background-color: #bc0a28;
+    }
+
+    #scolaire {
+        border-left: 65px solid #106308;
+        background-color: #138a08;
+    }
+
+.footer {
+    position:absolute;
+    width:100%;
+    height:20%;
+    background-color:#2E2E2E;
+    border-top: 10px solid #FFB900;
+}
+
+    .footerbg {
+        height:40%;
+        width:60%;
+        opacity:.35;
+        float:right;
+    }
+
+    .footersay {
+        color: #939393;
+        text-align: center;
+    }
