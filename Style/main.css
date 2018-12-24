@@ -9,20 +9,69 @@ body {
     background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 54%, rgba(209,209,209,1) 100%);
 }
 
-.panel {
-    position:sticky;
+a {
+    text-decoration:none;
+    color:white;
+    font-weight:700;
+}
+
+.icon {
+    position: absolute;
+    float:left;
+    margin-left:-40px;
+    margin-top:15px;
+    color: #d5d5d5;
+}
+
+#clicker {
+    margin-right:25%;
+}
+
+#chkbox {
+    position: relative;
     float:right;
-    height:100%;
-    width:10%;
-    background-color: #0fa9ff;
+    margin-right:27%;
+    margin-top:1.3%;
+    color: #b52965;;
+    font-weight: 700;
 }
 
-.hidden {
-    display:none;
+.panel-wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 30em;
+    transform: translateX(100%);
+    transition: .3s ease-out;
 }
 
-.open {
-    display:block;
+.panel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    color: #eee;
+    overflow: auto;
+    padding: 1em;
+    opacity: .99;
+    z-index:15;
+}
+
+[type="checkbox"]:checked ~ .panel-wrap {
+    transform: translateX(0%);
+}
+
+*,*:before, *:after {box-sizing: border-box;}
+
+[type="checkbox"] {
+    margin-left:50px;
+    margin-top:30px;
+    position:absolute;
+    float:right;
+    right:0;
 }
 
 .header {
@@ -31,22 +80,6 @@ body {
 
     #about {
         float:left;
-    }
-
-    .icon {
-        font-size:25px;
-        float:right;
-        margin-right:50px;
-        margin-top:25px;
-    }
-
-    .icon-title {
-        font-size:15px;
-        float:right;
-        margin-right:-60px;
-        margin-top:65px;
-        color: #b52965;
-        font-weight:700;
     }
 
     .title-header {
@@ -79,6 +112,11 @@ body {
         color:#2E2E2E;
     }
 
+    #hide {
+        opacity:.99;
+        z-index:1;
+    }
+
 .code {
     float:right;
     position: absolute;
@@ -86,8 +124,7 @@ body {
     margin-top:5%;
     width:900px;
     height:700px;
-    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0 39.8%);
-    opacity:.99;
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0 40.5%);
 }
 
     .perso {
@@ -105,14 +142,6 @@ body {
         -webkit-box-shadow: 7px 6px 13px -2px rgba(0,0,0,0.2);
         -moz-box-shadow: 7px 6px 13px -2px rgba(0,0,0,0.2);
         box-shadow: 7px 6px 13px -2px rgba(0,0,0,0.2);
-    }
-
-    #collapse {
-        position: absolute;
-        width:120px;
-        height:inherit;
-        margin:auto;
-        right:30px;
     }
 
         .infopersotitle {
@@ -140,7 +169,7 @@ body {
     overflow: hidden;
     background-color: #FFB900;
     opacity: .99;
-    z-index: 1;
+    z-index: -1;
     clip-path: polygon(0 0, 76% 0, 57.5% 100%, 0% 100%);
 }
 
@@ -317,14 +346,14 @@ body {
              }
 
     #certifications {
-        border-left: 65px solid #463d99;
-        background-color: #574cbf;
+        border-left: 65px solid #8e071f;
+        background-color: #bc0a28;
 
     }
 
     #experiences {
-        border-left: 65px solid #8e071f;
-        background-color: #bc0a28;
+        border-left: 65px solid #463d99;
+        background-color: #574cbf;
     }
 
     #scolaire {

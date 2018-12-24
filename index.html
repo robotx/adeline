@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="" xmlns:https="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -14,23 +14,21 @@
 </head>
 
 <body>
-<div id="nya" class="">
 
-</div>
+<input id="clicker" type="checkbox" />
+<label id="chkbox" for="clicker">Accès rapide</label>
+
+
 
 <div class="header">
     <p class="whois" id="about">Un simple site sur moi ! </p>
-    <a onclick="collapsepanel()"><div class="perso" id="collapse">
-    <i class="fas fa-bars icon"></i>
-    <span class="icon-title">Accès Rapide</span>
-    </div></a>
 
     <div class="title-header">
         <h1 id="title">Paul Zurita<span class="blink">_</span></h1>
     </div>
 </div>
 
-<div>
+<div id="hide">
 <img class="code" src="Style/codeimg.jpg" />
     <div class="perso">
         <p class="infopersotitle">Informations personnelles</p>
@@ -58,8 +56,21 @@ Mes centres d'intérêt sont les jeux de stratégie/tactique, le rétro-gaming, 
 </p>
 </div>
 
+<!--panneau !! -->
+<div class="panel-wrap">
+    <div class="panel">
+        <ul>
+            <li><a href="#skills">Compétences</a><br/></li>
+            <li><a href="#experiences">Expériences</a><br/></li>
+            <li><a href="#certifications">Certifications</a><br/></li>
+            <li><a href="#scolaire">Cursus scolaire</a><br/></li>
+        </ul>
+    </div>
+</div>
+
 <div class="button" id="skills">
-<p class="whois buttontitle" >Compétences</p>
+    <i class="fas fa-align-left icon"></i>
+    <p class="whois buttontitle" >Compétences</p>
 </div>
 
     <p class="skills1">Langages web</p>
@@ -111,8 +122,17 @@ Mes centres d'intérêt sont les jeux de stratégie/tactique, le rétro-gaming, 
         <div class="fullskill" id="deinfo"></div> <!--couleur-->
 
 
+<div class="button" id="experiences">
+    <i class="fas fa-flask icon"></i>
+    <p class="whois buttontitle" >Expériences</p>
+</div>
+
+<p class="skills1">- Assistant TICE (2017 - ~) : <span style="font-weight: 300;font-style: italic;">Collège Chasse Royale de Valenciennes</span></p>
+<p class="skills1">- Stage NORCOD 1 mois (mi-2016) : <span style="font-weight: 300;font-style: italic;">Roncq</span></p>
+
 
 <div class="button" id="certifications">
+    <i class="fas fa-certificate icon"></i>
     <p class="whois buttontitle" >Certifications</p>
 </div>
 
@@ -120,14 +140,9 @@ Mes centres d'intérêt sont les jeux de stratégie/tactique, le rétro-gaming, 
 <p class="skills1" style="font-size:1.2em">- Habilitation électrique</p>
 
 
-<div class="button" id="experiences">
-    <p class="whois buttontitle" >Expériences</p>
-</div>
-
-<p class="skills1">- Assistant TICE (2017 - ~) : <span style="font-weight: 300;font-style: italic;">Collège Chasse Royale de Valenciennes</span></p>
-<p class="skills1">- Stage NORCOD 1 mois (mi-2016) : <span style="font-weight: 300;font-style: italic;">Roncq</span></p>
 
 <div class="button" id="scolaire">
+    <i class="fas fa-graduation-cap icon"></i>
     <p class="whois buttontitle" >Cursus scolaire</p>
 </div>
 
@@ -146,7 +161,6 @@ Mes centres d'intérêt sont les jeux de stratégie/tactique, le rétro-gaming, 
     <img class="footerbg" src="Style/matrix.png">
     <p class="footersay">2018 - Paul Zurita</p>
 </div>
-<script src="JS/func.js"></script>
 </body>
 
 </html>
